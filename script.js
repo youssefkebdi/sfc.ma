@@ -45,7 +45,7 @@ function renderMenu(){
   grid.innerHTML = menuItems.map(item => `
     <article class="menu-card" onclick="orderItem('${item.name.replace(/'/g, "\\'")}', ${item.price})">
       <div class="menu-img">
-        <img src="${item.img}" alt="${item.name}" onerror="this.src='logo.png'">
+        <img src="${item.img}" alt="${item.name}" onerror="this.src='top-banner.png'">
       </div>
       <div class="menu-body">
         <h3>${item.name}</h3>
