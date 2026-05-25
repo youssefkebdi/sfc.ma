@@ -8,13 +8,14 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
 body{background:#fff;color:#111}
-header{background:#000;color:#fff;padding:15px 5%;position:sticky;top:0;z-index:10}
-nav{display:flex;justify-content:space-between;align-items:center}
-.logo-box img{width:210px;max-height:90px;object-fit:contain}
-.links a{color:#fff;text-decoration:none;margin-left:18px;font-weight:bold}
-.call{background:#f4b000;color:#000;padding:10px 16px;border-radius:30px;text-decoration:none;font-weight:bold}
+header{background:#000;padding:15px 5%;position:sticky;top:0;z-index:10}
+nav{display:flex;justify-content:space-between;align-items:center;gap:20px}
+.logo-box{background:linear-gradient(135deg,#fff,#f4b000);padding:10px 25px;border-radius:25px}
+.logo-box img{width:230px;max-height:95px;object-fit:contain}
+.links a{color:white;text-decoration:none;margin-left:18px;font-weight:bold}
+.call{background:#e60000;color:white;padding:13px 20px;border-radius:30px;text-decoration:none;font-weight:bold}
 
-.hero{min-height:85vh;background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url("https://images.unsplash.com/photo-1562967916-eb82221dfb36?q=80&w=1600") center/cover;display:flex;align-items:center;justify-content:center;text-align:center;color:white;padding:40px}
+.hero{min-height:80vh;background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url("signature.webp") center/cover;display:flex;align-items:center;justify-content:center;text-align:center;color:white;padding:35px}
 .hero h1{font-size:58px;line-height:1.1}
 .hero span{color:#f4b000}
 .hero p{font-size:20px;margin:20px 0}
@@ -22,37 +23,39 @@ nav{display:flex;justify-content:space-between;align-items:center}
 .red{background:#e60000;color:white}
 .white{background:white;color:#111}
 
-.menu-title{text-align:center;padding:50px 20px 20px}
+.menu-title{text-align:center;padding:45px 20px 20px}
 .menu-title h2{font-size:38px}
-.menu-title p{margin-top:10px;color:#555}
+.menu-title p{color:#555;margin-top:10px}
 
-.main{display:grid;grid-template-columns:1fr 330px;gap:25px;padding:20px 5%}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
-.item{background:white;border-radius:18px;box-shadow:0 8px 25px rgba(0,0,0,.12);overflow:hidden;cursor:pointer}
-.item img{width:100%;height:160px;object-fit:cover}
+.main{display:grid;grid-template-columns:1fr 340px;gap:25px;padding:20px 5% 45px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+.item{background:white;border-radius:18px;box-shadow:0 8px 25px rgba(0,0,0,.12);overflow:hidden;cursor:pointer;transition:.2s}
+.item:hover{transform:translateY(-4px)}
+.item img{width:100%;height:170px;object-fit:cover}
 .item-content{padding:15px}
 .item h3{font-size:18px}
 .price{font-weight:bold;color:#e60000;margin-top:8px;font-size:20px}
 .plus{float:right;background:#000;color:white;width:32px;height:32px;border-radius:50%;line-height:32px;text-align:center;font-size:22px}
 
-.cart{background:#fff;border-radius:18px;box-shadow:0 8px 25px rgba(0,0,0,.18);position:sticky;top:110px;align-self:start}
-.cart h2{background:#000;color:#fff;padding:18px;border-radius:18px 18px 0 0}
+.cart{background:white;border-radius:18px;box-shadow:0 8px 25px rgba(0,0,0,.18);position:sticky;top:120px;align-self:start}
+.cart h2{background:#000;color:white;padding:18px;border-radius:18px 18px 0 0}
 .cart-content{padding:18px}
 .row{display:flex;justify-content:space-between;border-bottom:1px solid #ddd;padding:10px 0}
-.remove{color:#e60000;font-weight:bold;cursor:pointer}
+.remove{color:#e60000;font-weight:bold;cursor:pointer;margin-left:8px}
 .total{display:flex;justify-content:space-between;font-size:24px;font-weight:bold;margin:20px 0}
 button{width:100%;padding:14px;border:0;border-radius:12px;font-weight:bold;cursor:pointer;font-size:15px}
 .whatsapp{background:#16b84e;color:white}
 .clear{background:#000;color:white;margin-top:8px}
-.info{background:#fff3c4;border-radius:12px;padding:15px;margin-top:15px;text-align:center;font-weight:bold}
-.features{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;background:#050505;color:white;padding:25px 5%;text-align:center}
+
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;background:#050505;color:white;padding:25px 5%;text-align:center;font-weight:bold}
 footer{background:#000;color:white;text-align:center;padding:16px}
 
 @media(max-width:900px){
-nav,.hero,.main{grid-template-columns:1fr;flex-direction:column;text-align:center}
+nav{flex-direction:column;text-align:center}
 .links a{display:inline-block;margin:8px}
 .logo-box img{width:240px}
-.hero h1{font-size:44px}
+.hero h1{font-size:42px}
+.main{grid-template-columns:1fr}
 .features{grid-template-columns:1fr 1fr}
 }
 </style>
@@ -97,13 +100,14 @@ nav,.hero,.main{grid-template-columns:1fr;flex-direction:column;text-align:cente
 <h2>YOUR BASKET</h2>
 <div class="cart-content">
 <div id="basket">No items selected</div>
+
 <div class="total">
 <span>TOTAL</span>
 <span id="total">0 DH</span>
 </div>
+
 <button class="whatsapp" onclick="checkout()">ORDER ON WHATSAPP</button>
 <button class="clear" onclick="clearCart()">CLEAR BASKET</button>
-<div class="info">Delivery available. Fresh chicken daily.</div>
 </div>
 </div>
 </div>
@@ -123,12 +127,18 @@ nav,.hero,.main{grid-template-columns:1fr;flex-direction:column;text-align:cente
 const phone="212641928720";
 
 const menu=[
-{name:"Chicken Burger",price:35,img:"https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=800"},
-{name:"Fried Chicken Meal",price:55,img:"https://images.unsplash.com/photo-1562967916-eb82221dfb36?q=80&w=800"},
-{name:"Chicken Wrap",price:40,img:"https://images.unsplash.com/photo-1626700051175-6818013e1d4f?q=80&w=800"},
-{name:"Crispy Wings",price:45,img:"https://images.unsplash.com/photo-1527477396000-e27163b481c2?q=80&w=800"},
-{name:"French Fries",price:18,img:"https://images.unsplash.com/photo-1576107232684-1279f390859f?q=80&w=800"},
-{name:"Family Bucket",price:120,img:"https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?q=80&w=800"}
+{name:"Classic Burger",price:35,img:"classic-burger.webp"},
+{name:"Crisp Duo",price:55,img:"crisp-duo.webp"},
+{name:"Crispy Loaded",price:60,img:"crispy-loaded.webp"},
+{name:"Crispy Wrap",price:40,img:"crispy-wrap.webp"},
+{name:"Double Smashed",price:65,img:"double-smashed.webp"},
+{name:"Cheese Bomb",price:50,img:"cheese-bomb.webp"},
+{name:"Italian Crispy",price:55,img:"italian-crispy.webp"},
+{name:"Mac Cheese Bowl",price:45,img:"mac-cheese-bowl.webp"},
+{name:"Meat Loaded",price:70,img:"meat-loaded.webp"},
+{name:"Extra Fries",price:15,img:"extra-fries.webp"},
+{name:"Extra Cola",price:12,img:"extra-cola.webp"},
+{name:"Extra Sauce",price:8,img:"extra-sauce.webp"}
 ];
 
 let cart=[];
@@ -136,7 +146,7 @@ let cart=[];
 function loadMenu(){
 document.getElementById("menuGrid").innerHTML=menu.map((item,i)=>`
 <div class="item" onclick="addItem(${i})">
-<img src="${item.img}">
+<img src="${item.img}" alt="${item.name}">
 <div class="item-content">
 <h3>${item.name}<span class="plus">+</span></h3>
 <div class="price">${item.price} DH</div>
@@ -162,12 +172,14 @@ basket.innerHTML="No items selected";
 document.getElementById("total").innerText="0 DH";
 return;
 }
+
 basket.innerHTML=cart.map((item,i)=>`
 <div class="row">
 <span>${item.name}</span>
-<span>${item.price} DH <b class="remove" onclick="removeItem(${i})">×</b></span>
+<span>${item.price} DH <b class="remove" onclick="removeItem(${i});event.stopPropagation()">×</b></span>
 </div>
 `).join("");
+
 let total=cart.reduce((sum,item)=>sum+item.price,0);
 document.getElementById("total").innerText=total+" DH";
 }
@@ -182,11 +194,14 @@ if(cart.length===0){
 alert("Please select items first");
 return;
 }
+
 let total=cart.reduce((sum,item)=>sum+item.price,0);
 let msg="Hello SFC FRIED CHICKEN, I want to order:%0A%0A";
+
 cart.forEach(item=>{
 msg+=`- ${item.name}: ${item.price} DH%0A`;
 });
+
 msg+=`%0ATotal: ${total} DH`;
 window.open(`https://wa.me/${phone}?text=${msg}`,"_blank");
 }
