@@ -6,505 +6,223 @@
 <title>SFC FRIED CHICKEN</title>
 
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif
-}
-
-body{
-background:#f5f5f5;
-}
-
-header{
-background:black;
-padding:20px 5%;
-color:white;
-overflow:hidden;
-}
-
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-margin-bottom:40px;
-}
-
-.logo-box{
-background:linear-gradient(135deg,#fff9d7,#ffbe2e);
-padding:12px 25px;
-border-radius:20px;
-box-shadow:0 0 25px rgba(255,200,0,.4);
-}
-
-.logo-box img{
-width:260px;
-display:block;
-}
-
-.links a{
-color:white;
-text-decoration:none;
-margin:0 15px;
-font-weight:bold;
-}
-
-.call{
-background:red;
-padding:15px 25px;
-border-radius:50px;
-color:white;
-text-decoration:none;
-font-weight:bold;
-}
-
-.hero{
-display:grid;
-grid-template-columns:1fr 1fr;
-align-items:center;
-gap:40px;
-}
-
-.hero h1{
-font-size:75px;
-line-height:.9;
-font-weight:900;
-}
-
-.hero h1 span{
-color:red;
-}
-
-.hero p{
-font-size:22px;
-margin:20px 0;
-}
-
-.hero-buttons a{
-display:inline-block;
-padding:15px 30px;
-border-radius:50px;
-margin-right:15px;
-text-decoration:none;
-font-weight:bold;
-}
-
-.red{
-background:red;
-color:white;
-}
-
-.white{
-border:2px solid white;
-color:white;
-}
-
-.hero img{
-width:100%;
-border-radius:20px;
-}
-
-.menu-title{
-text-align:center;
-padding:30px;
-}
-
-.menu-title h2{
-font-size:45px;
-color:#d00000;
-}
-
-.main{
-display:grid;
-grid-template-columns:1fr 350px;
-gap:25px;
-padding:0 4%;
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:18px;
-}
-
-.card{
-background:white;
-padding:15px;
-border-radius:15px;
-cursor:pointer;
-box-shadow:0 5px 15px rgba(0,0,0,.1);
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-5px);
-}
-
-.card img{
-width:100%;
-height:130px;
-object-fit:contain;
-}
-
-.card h3{
-font-size:16px;
-margin-top:10px;
-}
-
-.price{
-color:red;
-font-size:20px;
-font-weight:bold;
-}
-
-.plus{
-float:right;
-background:red;
-color:white;
-width:30px;
-height:30px;
-border-radius:50%;
-line-height:30px;
-text-align:center;
-font-size:22px;
-}
-
-.cart{
-background:white;
-border-radius:20px;
-overflow:hidden;
-position:sticky;
-top:15px;
-box-shadow:0 5px 20px rgba(0,0,0,.15);
-}
-
-.cart h2{
-background:red;
-color:white;
-padding:20px;
-}
-
-.cart-content{
-padding:20px;
-}
-
-.row{
-display:flex;
-justify-content:space-between;
-padding:10px 0;
-border-bottom:1px solid #ddd;
-}
-
-.total{
-display:flex;
-justify-content:space-between;
-font-size:25px;
-font-weight:bold;
-margin:20px 0;
-}
-
-button{
-width:100%;
-padding:15px;
-border:0;
-border-radius:10px;
-margin-top:10px;
-font-weight:bold;
-cursor:pointer;
-}
-
-.whatsapp{
-background:#16b84e;
-color:white;
-}
-
-.clear{
-border:1px solid red;
-color:red;
-background:white;
-}
-
-footer{
-margin-top:40px;
-padding:30px;
-background:black;
-color:white;
-text-align:center;
-}
-
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
+body{background:#f6f6f6;color:#111}
+header{background:#030303;color:#fff;padding:18px 5% 60px}
+nav{display:flex;justify-content:space-between;align-items:center;gap:25px}
+.logo-box{background:linear-gradient(135deg,#fff8d8,#ffc13b);padding:14px 26px;border-radius:24px;box-shadow:0 0 25px rgba(255,190,0,.45)}
+.logo-box img{width:280px;height:auto;display:block}
+.links a{color:#fff;text-decoration:none;margin:0 18px;font-weight:900;font-size:17px}
+.call{background:#e00000;color:#fff;text-decoration:none;padding:16px 28px;border-radius:40px;font-weight:900}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center;margin-top:45px}
+.hero h1{font-size:72px;line-height:.92;font-weight:900}
+.hero h1 span{color:#e00000}
+.hero p{font-size:21px;margin:22px 0}
+.hero a{display:inline-block;text-decoration:none;border-radius:40px;padding:15px 28px;margin-right:12px;font-weight:900}
+.red{background:#e00000;color:#fff}
+.outline{border:2px solid #fff;color:#fff}
+.hero img{width:100%;height:360px;object-fit:cover;border-radius:18px}
+.menu-title{text-align:center;padding:28px 10px 18px}
+.menu-title h2{color:#d00000;font-size:42px;font-weight:900}
+.main{display:grid;grid-template-columns:1fr 350px;gap:24px;padding:0 5% 35px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(205px,1fr));gap:18px}
+.card{background:#fff;border-radius:16px;padding:14px;box-shadow:0 5px 18px rgba(0,0,0,.12);cursor:pointer;transition:.2s;min-height:210px}
+.card:hover{transform:translateY(-4px)}
+.card img{width:100%;height:120px;object-fit:contain}
+.card h3{font-size:16px;margin-top:10px;font-weight:900}
+.price{color:#d00000;font-weight:900;font-size:19px;margin-top:4px}
+.plus{float:right;background:#d00000;color:white;width:32px;height:32px;border-radius:50%;line-height:32px;text-align:center;font-size:24px;font-weight:bold}
+.cart{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 5px 22px rgba(0,0,0,.18);position:sticky;top:15px;align-self:start}
+.cart h2{background:#d00000;color:#fff;padding:20px;font-size:28px}
+.cart-content{padding:20px}
+.row{display:flex;justify-content:space-between;gap:10px;border-bottom:1px solid #ddd;padding:10px 0}
+.remove{color:#d00000;font-weight:900;cursor:pointer}
+.total{display:flex;justify-content:space-between;font-size:25px;font-weight:900;margin:20px 0}
+button{width:100%;padding:15px;border-radius:12px;margin-top:10px;font-weight:900;cursor:pointer;font-size:15px}
+.whatsapp{background:#16b84e;color:white;border:0}
+.clear{background:white;color:#d00000;border:1px solid #d00000}
+.info{background:#fff3c4;border-radius:12px;padding:15px;margin-top:15px;text-align:center;font-weight:bold}
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;background:#050505;color:white;padding:25px 5%;text-align:center}
+footer{background:#d00000;color:white;text-align:center;padding:16px}
 @media(max-width:900px){
-
-.hero,.main{
-grid-template-columns:1fr;
+nav,.hero,.main{grid-template-columns:1fr;flex-direction:column;text-align:center}
+.links a{display:inline-block;margin:8px}
+.logo-box img{width:240px}
+.hero h1{font-size:48px}
+.features{grid-template-columns:1fr 1fr}
 }
-
-.hero h1{
-font-size:50px;
-}
-
-nav{
-flex-direction:column;
-gap:20px;
-}
-
-}
-
 </style>
 </head>
 
 <body>
 
 <header>
-
 <nav>
+  <div class="logo-box">
+    <img src="logo.png" alt="SFC Logo">
+  </div>
 
-<div class="logo-box">
-<img src="logo.png">
-</div>
+  <div class="links">
+    <a href="#menu">MENU</a>
+    <a href="https://maps.app.goo.gl/zPzpB3QQHrpQdzuC8" target="_blank">LOCATION</a>
+    <a href="tel:+212641928720">CONTACT</a>
+  </div>
 
-<div class="links">
-<a href="#">MENU</a>
-<a href="https://maps.app.goo.gl/zPzpB3QQHrpQdzuC8">LOCATION</a>
-<a href="tel:+212641928720">CONTACT</a>
-</div>
-
-<a class="call" href="tel:+212641928720">
-☎ +212641928720
-</a>
-
+  <a class="call" href="tel:+212641928720">☎ +212641928720</a>
 </nav>
 
 <div class="hero">
+  <div>
+    <h1>CRISPY.<br><span>JUICY.</span><br>IRRESISTIBLE.</h1>
+    <p>Freshly made. Boldly seasoned. Always SFC.</p>
+    <a class="red" href="tel:+212641928720">CALL NOW</a>
+    <a class="outline" href="https://maps.app.goo.gl/zPzpB3QQHrpQdzuC8" target="_blank">VIEW LOCATION</a>
+  </div>
 
-<div>
-
-<h1>
-
-CRISPY.<br>
-
-<span>JUICY.</span><br>
-
-IRRESISTIBLE.
-
-</h1>
-
-<p>
-
-Freshly made. Boldly seasoned. Always SFC.
-
-</p>
-
-<div class="hero-buttons">
-
-<a class="red" href="tel:+212641928720">
-
-CALL NOW
-
-</a>
-
-<a class="white"
-href="https://maps.app.goo.gl/zPzpB3QQHrpQdzuC8">
-
-VIEW LOCATION
-
-</a>
-
+  <img src="signature.webp" alt="SFC Fried Chicken">
 </div>
-
-</div>
-
-<img src="signature.webp">
-
-</div>
-
 </header>
 
-<section class="menu-title">
-
-<h2>OUR MENU</h2>
-
-<p>Tap any item to add basket</p>
-
+<section class="menu-title" id="menu">
+  <h2>OUR MENU</h2>
+  <p>Tap any item to add to your basket</p>
 </section>
 
-<div class="main">
+<section class="main">
+  <div class="grid" id="menuGrid"></div>
 
-<div class="grid" id="menu"></div>
+  <aside class="cart">
+    <h2>YOUR BASKET 🛒</h2>
+    <div class="cart-content">
+      <div id="basketBox">No items selected.</div>
+      <div class="total">
+        <span>TOTAL</span>
+        <span id="total">0 DH</span>
+      </div>
+      <button class="whatsapp" onclick="checkout()">CHECKOUT ON WHATSAPP</button>
+      <button class="clear" onclick="clearBasket()">CLEAR BASKET</button>
+      <div class="info">Your order will be sent directly to WhatsApp<br>+212641928720</div>
+    </div>
+  </aside>
+</section>
 
-<div class="cart">
+<section class="features">
+  <div>🍗 <b>100% HALAL</b><br>Chicken</div>
+  <div>🔥 <b>FRESH & HOT</b><br>Always</div>
+  <div>🛵 <b>FAST DELIVERY</b><br>To your door</div>
+  <div>⭐ <b>BEST QUALITY</b><br>Guaranteed</div>
+</section>
 
-<h2>YOUR BASKET</h2>
-
-<div class="cart-content">
-
-<div id="basket">
-
-No items selected
-
-</div>
-
-<div class="total">
-
-<span>TOTAL</span>
-
-<span id="total">
-
-0 DH
-
-</span>
-
-</div>
-
-<button class="whatsapp"
-onclick="checkout()">
-
-CHECKOUT ON WHATSAPP
-
-</button>
-
-<button class="clear"
-onclick="clearBasket()">
-
-CLEAR BASKET
-
-</button>
-
-</div>
-
-</div>
-
-</div>
-
-<footer>
-
-© SFC FRIED CHICKEN
-
-</footer>
+<footer>© 2026 SFC FRIED CHICKEN. All rights reserved.</footer>
 
 <script>
-
-const items=[
-
-["THE CLASSIC",25,"classic-burger.webp"],
-["SIGNATURE",33,"signature.webp"],
-["THE SPECIAL",33,"special.webp"],
-["THE SPICY",26,"spicy.webp"],
-["3 STRIPS",30,"3-strips.webp"],
-["6 STRIPS",49,"6-strips.webp"],
-["10 STRIPS",69,"10-strips.webp"],
-["DOUBLE SMASHED",30,"double-smashed.webp"],
-["CRISPY WRAP",22,"crispy-wrap.webp"],
-["CHEESE BOMB",22,"cheese-bomb.webp"],
-["CRISP DUO",39,"crisp-duo.webp"],
-["CRISPY LOADED",25,"crispy-loaded.webp"],
-["EXTRA COLA",5,"extra-cola.webp"],
-["EXTRA FRIES",5,"extra-fries.webp"],
-["EXTRA SAUCE",2,"extra-sauce.webp"]
-
+const items = [
+  ["THE CLASSIC",25,"classic-burger.webp"],
+  ["SIGNATURE",33,"signature.webp"],
+  ["THE SPECIAL",33,"special.webp"],
+  ["THE SPICY 🌶️",26,"spicy.webp"],
+  ["SIGNATURE SFC CRISPY SANDWICH",35,"sfc-crispy-sandwich.webp"],
+  ["CLASSIC BURGER",25,"classic-burger.webp"],
+  ["DOUBLE SMASHED",30,"double-smashed.webp"],
+  ["TRIPLE SMASHED",37,"triple-smashed.webp"],
+  ["THE MEAT",28,"the-meat.webp"],
+  ["THE CRISPY",29,"the-crispy.webp"],
+  ["THE MIXT 🌶️",35,"the-mixt.webp"],
+  ["CRISPY WRAP",22,"crispy-wrap.webp"],
+  ["SMASHED WRAP",25,"smashed-wrap.webp"],
+  ["3 STRIPS",30,"3-strips.webp"],
+  ["6 STRIPS",49,"6-strips.webp"],
+  ["10 STRIPS",69,"10-strips.webp"],
+  ["MEAT LOADED",25,"meat-loaded.webp"],
+  ["CHEESE BOMB",22,"cheese-bomb.webp"],
+  ["CRISPY LOADED",25,"crispy-loaded.webp"],
+  ["SAUCE BOMB",20,"sauce-bomb.webp"],
+  ["MAC&CHEESE CRISPY",35,"mac-cheese-crispy.webp"],
+  ["ITALIAN CRISPY BOWL",35,"italian-crispy-bowl.webp"],
+  ["CRISP DUO",39,"crisp-duo.webp"],
+  ["HAPPY DUO",34,"happy-duo.webp"],
+  ["SFC DUO",38,"sfc-duo.webp"],
+  ["WRAP DUO",30,"wrap-duo.webp"],
+  ["MAC&CHEESE BOWL",25,"mac-cheese-bowl.webp"],
+  ["ITALIAN BOWL",25,"italian-bowl.webp"],
+  ["EXTRA COLA",5,"extra-cola.webp"],
+  ["EXTRA FRIES",5,"extra-fries.webp"],
+  ["EXTRA SAUCE",2,"extra-sauce.webp"]
 ];
 
-let basket=[];
+let basket = [];
+const menuGrid = document.getElementById("menuGrid");
 
-const menu=document.getElementById("menu");
-
-items.forEach((item,index)=>{
-
-menu.innerHTML +=`
-
-<div class="card"
-
-onclick="add(${index})">
-
-<span class="plus">+</span>
-
-<img src="${item[2]}">
-
-<h3>${item[0]}</h3>
-
-<div class="price">
-
-${item[1]} DH
-
-</div>
-
-</div>
-
-`;
-
+items.forEach((item, index) => {
+  menuGrid.innerHTML += `
+    <div class="card" onclick="addItem(${index})">
+      <span class="plus">+</span>
+      <img src="${item[2]}" onerror="this.style.display='none'">
+      <h3>${item[0]}</h3>
+      <div class="price">${item[1]} DH</div>
+    </div>
+  `;
 });
 
-function add(i){
-
-basket.push(items[i]);
-
-update();
-
+function addItem(index){
+  basket.push(items[index]);
+  updateBasket();
 }
 
-function update(){
+function removeItem(index){
+  basket.splice(index,1);
+  updateBasket();
+}
 
-let html="";
+function updateBasket(){
+  const basketBox = document.getElementById("basketBox");
+  const totalBox = document.getElementById("total");
+  let total = 0;
 
-let total=0;
+  if(basket.length === 0){
+    basketBox.innerHTML = "No items selected.";
+    totalBox.innerText = "0 DH";
+    return;
+  }
 
-basket.forEach(item=>{
+  basketBox.innerHTML = "";
+  basket.forEach((item, index) => {
+    total += item[1];
+    basketBox.innerHTML += `
+      <div class="row">
+        <span>${item[0]}<br><b>${item[1]} DH</b></span>
+        <span class="remove" onclick="removeItem(${index})">✕</span>
+      </div>
+    `;
+  });
 
-html+=`
-
-<div class="row">
-
-<span>${item[0]}</span>
-
-<span>${item[1]} DH</span>
-
-</div>
-
-`;
-
-total+=item[1];
-
-});
-
-document.getElementById("basket").innerHTML=html || "No items selected";
-
-document.getElementById("total").innerText=total+" DH";
-
+  totalBox.innerText = total + " DH";
 }
 
 function clearBasket(){
-
-basket=[];
-
-update();
-
+  basket = [];
+  updateBasket();
 }
 
 function checkout(){
+  if(basket.length === 0){
+    alert("Please select items first.");
+    return;
+  }
 
-let total=0;
+  let total = 0;
+  let msg = "Hello SFC FRIED CHICKEN,%0A%0AI want to order:%0A%0A";
 
-let msg="Hello SFC FRIED CHICKEN,%0A%0AI want:%0A";
+  basket.forEach(item => {
+    msg += "- " + item[0] + " : " + item[1] + " DH%0A";
+    total += item[1];
+  });
 
-basket.forEach(item=>{
+  msg += "%0ATotal: " + total + " DH";
+  msg += "%0A%0APlease confirm my order.";
 
-msg += item[0]+" - "+item[1]+" DH%0A";
-
-total += item[1];
-
-});
-
-msg += "%0ATotal: "+total+" DH";
-
-window.open(
-
-"https://wa.me/212641928720?text="+msg
-
-);
-
+  window.open("https://wa.me/212641928720?text=" + msg, "_blank");
 }
-
 </script>
 
 </body>
