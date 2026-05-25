@@ -1,117 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SFC Fried Chicken</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>SFC Fried Chicken</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 </head>
+
 <body>
 
 <header class="top-header">
-  <div class="social-icons">
-    <a href="https://www.instagram.com/sfc.ma" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-    <a href="https://www.tiktok.com/@sfc.ma" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
-    <a href="https://www.facebook.com/sfcTiznit" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-  </div>
 
-  <img src="logo.png" class="main-logo" alt="SFC Fried Chicken Logo" />
+<div class="social-icons">
 
-  <a href="tel:+212641928720" class="call-btn">
-    <i class="fa-solid fa-phone"></i> +212 641 928 720
-  </a>
+<a href="https://www.instagram.com/sfc.ma" target="_blank">
+<i class="fa-brands fa-instagram"></i>
+</a>
+
+<a href="https://www.tiktok.com/@sfc.ma" target="_blank">
+<i class="fa-brands fa-tiktok"></i>
+</a>
+
+<a href="https://www.facebook.com/sfcTiznit" target="_blank">
+<i class="fa-brands fa-facebook"></i>
+</a>
+
+</div>
+
+<img src="logo.png" class="main-logo">
+
+<a href="tel:+212641928720" class="call-btn">
+
+<i class="fa-solid fa-phone"></i>
+
++212 641 928 720
+
+</a>
+
 </header>
 
+
 <section class="hero">
-  <div class="hero-text">
-    <h1>CRISPY.<br>JUICY.<br>IRRESISTIBLE.</h1>
-    <p>Freshly made. Boldly seasoned.</p>
-  </div>
+
+<div class="hero-content">
+
+<div>
+
+<h1>SFC FRIED CHICKEN</h1>
+
+<p>
+
+Beniiiiiiiiiin.<br>
+
+Darori Tjerbouh.<br>
+
+Krispy men berra,<br>
+
+o Juicy men L'dakhel.
+
+</p>
+
+</div>
+
+<div>
+
+<img src="signature.webp" class="hero-image">
+
+</div>
+
+</div>
+
 </section>
 
-<section class="menu-section">
-  <div class="menu-heading">
-    <h2>OUR <span>MENU</span></h2>
-    <p>Choose your favorites and send the order directly on WhatsApp.</p>
-  </div>
 
-  <div class="category-tabs">
-    <button class="tab active" data-category="all">ALL</button>
-    <button class="tab" data-category="burgers">BURGERS</button>
-    <button class="tab" data-category="wraps">WRAPS</button>
-    <button class="tab" data-category="boxes">BOXES</button>
-    <button class="tab" data-category="meals">MEALS</button>
-    <button class="tab" data-category="sides">SIDES</button>
-    <button class="tab" data-category="drinks">DRINKS</button>
-  </div>
 
-  <div class="layout">
-    <main class="menu-grid" id="menuGrid"></main>
+<section class="menu-title">
 
-    <aside class="sidebar">
-      <div class="cart">
-        <h3><i class="fa-solid fa-basket-shopping"></i> Your Order <span id="cartCount">0</span></h3>
-        <div id="cartItems" class="cart-items">
-          <p class="empty">No items selected</p>
-        </div>
+<h2>L'MENU DYALNA</h2>
 
-        <div class="cart-total">
-          <span>Total</span>
-          <strong id="cartTotal">0 DHS</strong>
-        </div>
-
-        <button class="whatsapp-btn" onclick="checkoutWhatsApp()">
-          Send order on WhatsApp <i class="fa-brands fa-whatsapp"></i>
-        </button>
-
-        <button class="clear-btn" onclick="clearCart()">Clear order</button>
-
-        <p class="note">Your order will be sent as a WhatsApp message.</p>
-      </div>
-
-      <div class="promo">
-        <h3>MAKE IT A MEAL!</h3>
-        <p>Add fries & drink</p>
-        <strong>+20 DHS</strong>
-      </div>
-
-      <div class="features">
-        <div><i class="fa-solid fa-certificate"></i><span>100% Halal</span></div>
-        <div><i class="fa-solid fa-bowl-food"></i><span>Freshly Made</span></div>
-        <div><i class="fa-solid fa-motorcycle"></i><span>Fast Delivery</span></div>
-      </div>
-    </aside>
-  </div>
 </section>
+
+
+<div class="main-layout">
+
+<div class="grid" id="menuGrid">
+
+</div>
+
+
+
+<div class="cart">
+
+<h2>
+
+<i class="fa-solid fa-basket-shopping"></i>
+
+Talab dyalek
+
+<span id="cartCount">
+
+0
+
+</span>
+
+</h2>
+
+
+<div id="basket">
+
+No items selected
+
+</div>
+
+
+<div class="total">
+
+<span>TOTAL</span>
+
+<span id="total">
+
+0 DHS
+
+</span>
+
+</div>
+
+
+<button class="whatsapp"
+
+onclick="checkoutWhatsApp()">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+Sifet lina message
+
+</button>
+
+
+
+<div class="features">
+
+<div>
+
+✓ 100% HALAL
+
+</div>
+
+<div>
+
+✓ Freshly made
+
+</div>
+
+<div>
+
+✓ Fast Delivery
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
 
 <footer>
-  <div class="footer-logo">
-    <img src="logo.png" alt="SFC Logo">
-    <p>Crispy. Juicy. Irresistible.</p>
-  </div>
 
-  <div>
-    <h4>Follow Us</h4>
-    <div class="footer-social">
-      <a href="https://www.instagram.com/sfc.ma" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-      <a href="https://www.tiktok.com/@sfc.ma" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
-      <a href="https://www.facebook.com/sfcTiznit" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-    </div>
-  </div>
+<div>
 
-  <div>
-    <h4>Contact Us</h4>
-    <p><i class="fa-solid fa-phone"></i> +212 641 928 720</p>
-    <p><i class="fa-brands fa-whatsapp"></i> +212 641 928 720</p>
-  </div>
+<img src="logo.png" class="footer-logo">
 
-  <div>
-    <h4>Location</h4>
-    <p><i class="fa-solid fa-location-dot"></i> Tiznit, Morocco</p>
-  </div>
+</div>
+
+<div>
+
+<h3>FOLLOW US</h3>
+
+<div class="footer-social">
+
+<a href="https://www.instagram.com/sfc.ma">
+
+<i class="fa-brands fa-instagram"></i>
+
+</a>
+
+<a href="https://www.tiktok.com/@sfc.ma">
+
+<i class="fa-brands fa-tiktok"></i>
+
+</a>
+
+<a href="https://www.facebook.com/sfcTiznit">
+
+<i class="fa-brands fa-facebook"></i>
+
+</a>
+
+</div>
+
+</div>
+
+<div>
+
+<h3>CONTACT</h3>
+
+<p>
+
++212641928720
+
+</p>
+
+</div>
+
+<div>
+
+<h3>LOCATION</h3>
+
+<a target="_blank"
+
+href="https://maps.app.goo.gl/zPzpB3QQHrpQdzuC8">
+
+Open location
+
+</a>
+
+</div>
+
 </footer>
 
+
 <script src="script.js"></script>
+
 </body>
 </html>
