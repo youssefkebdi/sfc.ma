@@ -3,64 +3,148 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Morocco Restaurant</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>SFC FRIED CHICKEN</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0;font-family:Arial,sans-serif}
+    body{background:#fff7ed;color:#222}
+    header{background:#b40000;color:white;padding:25px;text-align:center}
+    header h1{font-size:34px}
+    header p{margin:8px 0}
+    .btn{display:inline-block;background:#25d366;color:white;padding:12px 18px;border-radius:30px;text-decoration:none;font-weight:bold;margin:8px}
+    .map{background:#111}
+    .container{padding:25px;max-width:1200px;margin:auto}
+    h2{text-align:center;margin:25px 0;color:#b40000}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+    .item{background:white;border-radius:16px;padding:18px;box-shadow:0 4px 15px #0002;cursor:pointer;border:2px solid transparent}
+    .item:hover{border-color:#b40000;transform:scale(1.02)}
+    .item h3{color:#b40000;margin-bottom:8px}
+    .price{font-size:22px;font-weight:bold}
+    .basket{position:sticky;bottom:0;background:#111;color:white;padding:18px;border-radius:20px 20px 0 0}
+    .basket-row{display:flex;justify-content:space-between;margin:8px 0}
+    button{border:0;padding:12px 18px;border-radius:25px;font-weight:bold;cursor:pointer}
+    .checkout{background:#25d366;color:white;width:100%;margin-top:12px;font-size:18px}
+    .clear{background:#b40000;color:white;margin-top:8px;width:100%}
+    footer{text-align:center;background:#b40000;color:white;padding:20px;margin-top:30px}
+  </style>
 </head>
 <body>
 
-  <header class="hero">
-    <nav>
-      <h2>Morocco Restaurant</h2>
-      <a href="#menu">Menu</a>
-      <a href="#contact">Contact</a>
-    </nav>
+<header>
+  <h1>SFC FRIED CHICKEN</h1>
+  <p>Fresh • Crispy • Delicious</p>
+  <a class="btn" href="tel:+212641928720">Call Now: +212641928720</a>
+  <a class="btn map" href="https://maps.app.goo.gl/zPzpB3QQHrpQdzuC8" target="_blank">View Location</a>
+</header>
 
-    <div class="hero-content">
-      <h1>Authentic Moroccan Taste</h1>
-      <p>Fresh food, family atmosphere, and traditional Moroccan flavours.</p>
-      <a class="btn" href="https://wa.me/212XXXXXXXXX">Order on WhatsApp</a>
+<div class="container">
+  <h2>Tap Items to Add to Basket</h2>
+  <div class="grid" id="menu"></div>
+</div>
+
+<div class="container">
+  <div class="basket">
+    <h2 style="color:white;margin:0 0 10px">Your Basket</h2>
+    <div id="basketItems">No items selected.</div>
+    <div class="basket-row"><strong>Total</strong><strong id="total">0 DH</strong></div>
+    <button class="checkout" onclick="checkout()">Checkout on WhatsApp</button>
+    <button class="clear" onclick="clearBasket()">Clear Basket</button>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 SFC FRIED CHICKEN</p>
+</footer>
+
+<script>
+const menu = [
+  ["THE CLASSIC",25],["SIGNATURE",33],["THE SPECIAL",33],["THE SPICY",26],
+  ["SIGNATURE SFC CRISPY SANDWICH",35],
+  ["CLASSIC BURGER",25],["DOUBLE SMASHED",30],["TRIPLE SMASHED",37],
+  ["THE MEAT",28],["THE CRISPY",29],["THE MIXT",35],
+  ["CRISPY WRAP",22],["SMASHED WRAP",25],
+  ["3 STRIPS",30],["6 STRIPS",49],["10 STRIPS",69],
+  ["MEAT LOADED",25],["CHEESE BOMB",22],["CRISPY LOADED",25],["SAUCE BOMB",20],
+  ["MAC&CHEESE CRISPY",35],["ITALIAN CRISPY BOWL",35],
+  ["CRISP DUO",39],["HAPPY DUO",34],["SFC DUO",38],["WRAP DUO",30],
+  ["MAC&CHEESE BOWL",25],["ITALIAN BOWL",25],
+  ["EXTRA COLA",5],["EXTRA FRIES",5],["EXTRA SAUCE",2]
+];
+
+let basket = [];
+
+const menuDiv = document.getElementById("menu");
+
+menu.forEach((item, index) => {
+  menuDiv.innerHTML += `
+    <div class="item" onclick="addItem(${index})">
+      <h3>${item[0]}</h3>
+      <div class="price">${item[1]} DH</div>
+      <p>Click to add</p>
     </div>
-  </header>
+  `;
+});
 
-  <section class="about">
-    <h2>Welcome to Our Restaurant</h2>
-    <p>We serve delicious Moroccan dishes made with fresh ingredients and love.</p>
-  </section>
+function addItem(index){
+  basket.push(menu[index]);
+  updateBasket();
+}
 
-  <section id="menu" class="menu">
-    <h2>Our Popular Menu</h2>
+function updateBasket(){
+  const basketDiv = document.getElementById("basketItems");
+  const totalDiv = document.getElementById("total");
 
-    <div class="cards">
-      <div class="card">
-        <h3>Chicken Tajine</h3>
-        <p>Traditional Moroccan chicken with spices.</p>
-        <strong>80 MAD</strong>
+  if(basket.length === 0){
+    basketDiv.innerHTML = "No items selected.";
+    totalDiv.innerText = "0 DH";
+    return;
+  }
+
+  let total = 0;
+  basketDiv.innerHTML = "";
+
+  basket.forEach((item, i) => {
+    total += item[1];
+    basketDiv.innerHTML += `
+      <div class="basket-row">
+        <span>${item[0]} - ${item[1]} DH</span>
+        <span onclick="removeItem(${i})" style="cursor:pointer;color:#ffcc00">Remove</span>
       </div>
+    `;
+  });
 
-      <div class="card">
-        <h3>Couscous</h3>
-        <p>Fresh vegetables and tender meat.</p>
-        <strong>70 MAD</strong>
-      </div>
+  totalDiv.innerText = total + " DH";
+}
 
-      <div class="card">
-        <h3>Grilled Fish</h3>
-        <p>Served with salad and Moroccan sauce.</p>
-        <strong>90 MAD</strong>
-      </div>
-    </div>
-  </section>
+function removeItem(i){
+  basket.splice(i,1);
+  updateBasket();
+}
 
-  <section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <p>📍 Casablanca, Morocco</p>
-    <p>📞 +212 XX XX XX XX</p>
-    <p>⏰ Open Daily: 11 AM - 11 PM</p>
-  </section>
+function clearBasket(){
+  basket = [];
+  updateBasket();
+}
 
-  <footer>
-    <p>© 2026 Morocco Restaurant. All rights reserved.</p>
-  </footer>
+function checkout(){
+  if(basket.length === 0){
+    alert("Please select items first.");
+    return;
+  }
+
+  let message = "Hello SFC FRIED CHICKEN, I want to order:%0A%0A";
+  let total = 0;
+
+  basket.forEach(item => {
+    message += "- " + item[0] + " : " + item[1] + " DH%0A";
+    total += item[1];
+  });
+
+  message += "%0ATotal: " + total + " DH";
+  message += "%0A%0APlease confirm my order.";
+
+  window.open("https://wa.me/212641928720?text=" + message, "_blank");
+}
+</script>
 
 </body>
 </html>
