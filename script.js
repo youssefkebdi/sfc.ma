@@ -1,390 +1,63 @@
 const phoneNumber = "212641928720";
 
-const pages = [
-  {
-    "page": 1,
-    "img": "assets/menu/page-01.webp",
-    "alt": "SFC Menu Cover",
-    "items": []
-  },
-  {
-    "page": 2,
-    "img": "assets/menu/page-02.webp",
-    "alt": "Chicken sandwiches menu",
-    "items": [
-      {
-        "name": "The Classic",
-        "price": 25,
-        "x": 0,
-        "y": 0,
-        "w": 50,
-        "h": 28
-      },
-      {
-        "name": "Signature",
-        "price": 33,
-        "x": 0,
-        "y": 28,
-        "w": 55,
-        "h": 26
-      },
-      {
-        "name": "The Special",
-        "price": 33,
-        "x": 45,
-        "y": 35,
-        "w": 55,
-        "h": 28
-      },
-      {
-        "name": "The Spicy",
-        "price": 26,
-        "x": 0,
-        "y": 58,
-        "w": 100,
-        "h": 30
-      }
-    ]
-  },
-  {
-    "page": 3,
-    "img": "assets/menu/page-03.webp",
-    "alt": "Signature SFC Crispy Sandwich",
-    "items": [
-      {
-        "name": "Signature SFC Crispy Sandwich",
-        "price": 35,
-        "x": 0,
-        "y": 0,
-        "w": 100,
-        "h": 100
-      }
-    ]
-  },
-  {
-    "page": 4,
-    "img": "assets/menu/page-04.webp",
-    "alt": "Burger menu",
-    "items": [
-      {
-        "name": "Classic Burger",
-        "price": 25,
-        "x": 0,
-        "y": 0,
-        "w": 100,
-        "h": 28
-      },
-      {
-        "name": "Double Smashed",
-        "price": 30,
-        "x": 0,
-        "y": 28,
-        "w": 100,
-        "h": 28
-      },
-      {
-        "name": "Triple Smashed",
-        "price": 37,
-        "x": 0,
-        "y": 56,
-        "w": 100,
-        "h": 35
-      }
-    ]
-  },
-  {
-    "page": 5,
-    "img": "assets/menu/page-05.webp",
-    "alt": "Tacos menu",
-    "items": [
-      {
-        "name": "The Meat",
-        "price": 28,
-        "x": 0,
-        "y": 0,
-        "w": 100,
-        "h": 30
-      },
-      {
-        "name": "The Crispy",
-        "price": 29,
-        "x": 0,
-        "y": 30,
-        "w": 100,
-        "h": 28
-      },
-      {
-        "name": "The Mixt",
-        "price": 35,
-        "x": 0,
-        "y": 58,
-        "w": 100,
-        "h": 30
-      }
-    ]
-  },
-  {
-    "page": 6,
-    "img": "assets/menu/page-06.webp",
-    "alt": "Wrap menu",
-    "items": [
-      {
-        "name": "Crispy Wrap",
-        "price": 22,
-        "x": 0,
-        "y": 0,
-        "w": 100,
-        "h": 50
-      },
-      {
-        "name": "Smashed Wrap",
-        "price": 25,
-        "x": 0,
-        "y": 50,
-        "w": 100,
-        "h": 50
-      }
-    ]
-  },
-  {
-    "page": 7,
-    "img": "assets/menu/page-07.webp",
-    "alt": "Strips menu",
-    "items": [
-      {
-        "name": "3 Strips",
-        "price": 30,
-        "x": 0,
-        "y": 0,
-        "w": 100,
-        "h": 30
-      },
-      {
-        "name": "6 Strips",
-        "price": 49,
-        "x": 0,
-        "y": 30,
-        "w": 100,
-        "h": 30
-      },
-      {
-        "name": "10 Strips",
-        "price": 69,
-        "x": 0,
-        "y": 60,
-        "w": 100,
-        "h": 30
-      }
-    ]
-  },
-  {
-    "page": 8,
-    "img": "assets/menu/page-08.webp",
-    "alt": "Loaded fries menu",
-    "items": [
-      {
-        "name": "Meat Loaded",
-        "price": 25,
-        "x": 0,
-        "y": 0,
-        "w": 100,
-        "h": 25
-      },
-      {
-        "name": "Cheese Bomb",
-        "price": 22,
-        "x": 0,
-        "y": 25,
-        "w": 100,
-        "h": 25
-      },
-      {
-        "name": "Crispy Loaded",
-        "price": 25,
-        "x": 0,
-        "y": 50,
-        "w": 100,
-        "h": 25
-      },
-      {
-        "name": "Sauce Bomb",
-        "price": 20,
-        "x": 0,
-        "y": 75,
-        "w": 70,
-        "h": 20
-      },
-      {
-        "name": "Extra Cola",
-        "price": 5,
-        "x": 0,
-        "y": 85,
-        "w": 100,
-        "h": 15
-      }
-    ]
-  },
-  {
-    "page": 9,
-    "img": "assets/menu/page-09.webp",
-    "alt": "Crispy bowls menu",
-    "items": [
-      {
-        "name": "Mac&Cheese Crispy",
-        "price": 35,
-        "x": 0,
-        "y": 0,
-        "w": 100,
-        "h": 48
-      },
-      {
-        "name": "Italian Crispy Bowl",
-        "price": 35,
-        "x": 0,
-        "y": 48,
-        "w": 100,
-        "h": 42
-      }
-    ]
-  },
-  {
-    "page": 10,
-    "img": "assets/menu/page-10.webp",
-    "alt": "Duo menu",
-    "items": [
-      {
-        "name": "Crisp Duo",
-        "price": 39,
-        "x": 0,
-        "y": 0,
-        "w": 100,
-        "h": 25
-      },
-      {
-        "name": "Happy Duo",
-        "price": 34,
-        "x": 0,
-        "y": 25,
-        "w": 100,
-        "h": 25
-      },
-      {
-        "name": "SFC Duo",
-        "price": 38,
-        "x": 0,
-        "y": 50,
-        "w": 100,
-        "h": 25
-      },
-      {
-        "name": "Wrap Duo",
-        "price": 30,
-        "x": 0,
-        "y": 75,
-        "w": 100,
-        "h": 25
-      }
-    ]
-  },
-  {
-    "page": 11,
-    "img": "assets/menu/page-11.webp",
-    "alt": "Bowl menu",
-    "items": [
-      {
-        "name": "Mac&Cheese Bowl",
-        "price": 25,
-        "x": 0,
-        "y": 0,
-        "w": 100,
-        "h": 50
-      },
-      {
-        "name": "Italian Bowl",
-        "price": 25,
-        "x": 0,
-        "y": 50,
-        "w": 100,
-        "h": 45
-      }
-    ]
-  },
-  {
-    "page": 12,
-    "img": "assets/menu/page-12.webp",
-    "alt": "Extra Cola",
-    "items": [
-      {
-        "name": "Extra Cola",
-        "price": 5,
-        "x": 0,
-        "y": 0,
-        "w": 100,
-        "h": 100
-      }
-    ]
-  },
-  {
-    "page": 13,
-    "img": "assets/menu/page-13.webp",
-    "alt": "Extra Fries",
-    "items": [
-      {
-        "name": "Extra Fries",
-        "price": 5,
-        "x": 0,
-        "y": 0,
-        "w": 100,
-        "h": 100
-      }
-    ]
-  },
-  {
-    "page": 14,
-    "img": "assets/menu/page-14.webp",
-    "alt": "Extra Sauce",
-    "items": [
-      {
-        "name": "Extra Sauce",
-        "price": 2,
-        "x": 0,
-        "y": 0,
-        "w": 100,
-        "h": 100
-      }
-    ]
-  }
+const menuItems = [
+  {name:"The Classic", price:25, img:"the-classic.webp", desc:"Classic crispy chicken sandwich."},
+  {name:"Signature", price:33, img:"signature.webp", desc:"SFC signature crispy sandwich."},
+  {name:"The Special", price:33, img:"the-special.webp", desc:"Special crispy chicken burger."},
+  {name:"The Spicy", price:26, img:"the-spicy.webp", desc:"Spicy crispy chicken sandwich."},
+  {name:"Signature SFC Crispy Sandwich", price:35, img:"signature-sfc-crispy-sandwich.webp", desc:"Long signature SFC crispy sandwich."},
+  {name:"Classic Burger", price:25, img:"classic-burger.webp", desc:"Classic burger with cheese and sauce."},
+  {name:"Double Smashed", price:30, img:"double-smashed.webp", desc:"Double smashed burger."},
+  {name:"Triple Smashed", price:37, img:"triple-smashed.webp", desc:"Triple smashed burger."},
+  {name:"The Meat", price:28, img:"the-meat-tacos.webp", desc:"Meat tacos with fries."},
+  {name:"The Crispy", price:29, img:"the-crispy-tacos.webp", desc:"Crispy tacos with fries."},
+  {name:"The Mixt", price:35, img:"the-mixt.webp", desc:"Mixed tacos special."},
+  {name:"Crispy Wrap", price:22, img:"crispy-wrap.webp", desc:"Crispy chicken wrap."},
+  {name:"Smashed Wrap", price:25, img:"smashed-wrap.webp", desc:"Smashed beef wrap."},
+  {name:"3 Strips", price:30, img:"3-strips.webp", desc:"3 crispy chicken strips."},
+  {name:"6 Strips", price:49, img:"6-strips.webp", desc:"6 crispy chicken strips."},
+  {name:"10 Strips", price:69, img:"10-strips.webp", desc:"10 crispy chicken strips."},
+  {name:"Meat Loaded", price:25, img:"meat-loaded.webp", desc:"Loaded fries with meat."},
+  {name:"Cheese Bomb", price:22, img:"cheese-bomb.webp", desc:"Cheesy loaded fries."},
+  {name:"Crispy Loaded", price:25, img:"crispy-loaded.webp", desc:"Loaded fries with crispy chicken."},
+  {name:"Sauce Bomb", price:20, img:"sauce-bomb.webp", desc:"Loaded fries with sauce."},
+  {name:"Mac&Cheese Crispy", price:35, img:"mac-cheese-crispy.webp", desc:"Mac and cheese crispy meal."},
+  {name:"Italian Crispy Bowl", price:35, img:"italian-crispy.webp", desc:"Italian crispy bowl."},
+  {name:"Crisp Duo", price:39, img:"crisp-duo.webp", desc:"Duo crispy sandwich meal."},
+  {name:"Happy Duo", price:34, img:"happy-duo.webp", desc:"Happy duo meal."},
+  {name:"SFC Duo", price:38, img:"sfc-duo.webp", desc:"SFC duo meal."},
+  {name:"Wrap Duo", price:30, img:"wrap-duo.webp", desc:"Wrap duo meal."},
+  {name:"Mac&Cheese Bowl", price:25, img:"mac-cheese-bowl.webp", desc:"Mac and cheese bowl."},
+  {name:"Italian Bowl", price:25, img:"italian-bowl.webp", desc:"Italian bowl."},
+  {name:"Extra Cola", price:5, img:"extra-cola.webp", desc:"Extra soft drink."},
+  {name:"Extra Fries", price:5, img:"extra-fries.webp", desc:"Extra fries."},
+  {name:"Extra Sauce", price:2, img:"extra-sauce.webp", desc:"Extra sauce."}
 ];
 
-function whatsappLink(itemName, price) {
-  const text =
-    `Salam SFC,%0A%0ABghit n-order:%0A• ${itemName} - ${price} DH%0A%0AName:%0AAddress:%0ANote:`;
-  return `https://wa.me/${phoneNumber}?text=${text}`;
+function orderItem(name, price){
+  const message = `Salam SFC,%0A%0ABghit n-order:%0A• ${name} - ${price} DH%0A%0AName:%0AAddress:%0ANote:`;
+  window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
 }
 
-function openWhatsApp(itemName, price) {
-  const toast = document.getElementById("toast");
-  toast.textContent = `Opening WhatsApp: ${itemName}`;
-  toast.classList.add("show");
-  setTimeout(() => toast.classList.remove("show"), 1400);
-  window.open(whatsappLink(itemName, price), "_blank");
-}
+function renderMenu(){
+  const grid = document.getElementById("menuGrid");
 
-function renderMenu() {
-  const container = document.getElementById("menu");
-  container.innerHTML = pages.map(page => `
-    <section class="page" aria-label="${page.alt}">
-      <img src="${page.img}" alt="${page.alt}" loading="lazy">
-      ${page.items.map(item => `
-        <button
-          class="hotspot"
-          aria-label="Order ${item.name} ${item.price} DH on WhatsApp"
-          title="Order ${item.name} - ${item.price} DH"
-          style="left:${item.x}%; top:${item.y}%; width:${item.w}%; height:${item.h}%;"
-          onclick="openWhatsApp('${item.name.replace(/'/g, "\\'")}', ${item.price})">
-        </button>
-      `).join("")}
-    </section>
+  grid.innerHTML = menuItems.map(item => `
+    <article class="menu-card" onclick="orderItem('${item.name.replace(/'/g, "\\'")}', ${item.price})">
+      <div class="menu-img">
+        <img src="${item.img}" alt="${item.name}" onerror="this.src='logo.png'">
+      </div>
+      <div class="menu-body">
+        <h3>${item.name}</h3>
+        <p>${item.desc}</p>
+        <div class="menu-bottom">
+          <span class="price">${item.price} DH</span>
+          <button class="order-btn" onclick="event.stopPropagation(); orderItem('${item.name.replace(/'/g, "\\'")}', ${item.price})">
+            Order
+          </button>
+        </div>
+      </div>
+    </article>
   `).join("");
 }
 
