@@ -1,167 +1,331 @@
-const phoneNumber = "212641928720";
+const phoneNumber="212641928720";
 
-const menuItems = [
-  {id:1, name:"Cheese Bomb", price:59, category:"burgers", img:"cheese-bomb.webp", desc:"Crispy chicken, cheese sauce and mayo."},
-  {id:2, name:"Classic Burger", price:59, category:"burgers", img:"classic-burger.webp", desc:"Crispy chicken, lettuce, mayo and special sauce."},
-  {id:3, name:"Crisp Duo", price:55, category:"wraps", img:"crisp-duo.webp", desc:"Two crispy wraps packed with chicken."},
-  {id:4, name:"Crispy Loaded", price:60, category:"burgers", img:"crispy-loaded.webp", desc:"Loaded crispy chicken burger with cheese."},
-  {id:5, name:"Crispy Wrap", price:49, category:"wraps", img:"crispy-wrap.webp", desc:"Crispy chicken, lettuce, cheese and mayo."},
-  {id:6, name:"Double Smashed", price:69, category:"burgers", img:"double-smashed.webp", desc:"Double smashed beef, pickles and cheese sauce."},
-  {id:7, name:"Happy Duo", price:80, category:"meals", img:"happy-duo.webp", desc:"Two burgers, fries and drinks."},
-  {id:8, name:"Italian Bowl", price:55, category:"meals", img:"italian-bowl.webp", desc:"Chicken bowl with Italian style sauce."},
-  {id:9, name:"Italian Crispy", price:55, category:"wraps", img:"italian-crispy.webp", desc:"Crispy chicken wrap with Italian flavor."},
-  {id:10, name:"Mac Cheese Bowl", price:45, category:"meals", img:"mac-cheese-bowl.webp", desc:"Creamy mac and cheese with crispy chicken."},
-  {id:11, name:"Mac Cheese Crispy", price:48, category:"burgers", img:"mac-cheese-crispy.webp", desc:"Crispy chicken with mac cheese."},
-  {id:12, name:"Meat Loaded", price:70, category:"meals", img:"meat-loaded.webp", desc:"Loaded meat fries and special sauce."},
-  {id:13, name:"SFC Duo", price:89, category:"boxes", img:"sfc-duo.webp", desc:"Burger, crispy chicken pieces, fries and drink."},
-  {id:14, name:"Wrap Duo", price:89, category:"boxes", img:"wrap-duo.webp", desc:"Two wraps, fries and drink."},
-  {id:15, name:"3 Pcs Strips", price:39, category:"boxes", img:"3-strips.webp", desc:"Three crispy chicken strips."},
-  {id:16, name:"6 Pcs Strips", price:69, category:"boxes", img:"6-strips.webp", desc:"Six crispy chicken strips with sauce."},
-  {id:17, name:"10 Pcs Strips", price:99, category:"boxes", img:"10-strips.webp", desc:"Ten crispy chicken strips for sharing."},
-  {id:18, name:"Smashed Wrap", price:49, category:"wraps", img:"smashed-wrap.webp", desc:"Wrap with smashed beef and special sauce."},
-  {id:19, name:"The Classic", price:59, category:"burgers", img:"the-classic.webp", desc:"Classic SFC burger with signature taste."},
-  {id:20, name:"The Crispy Tacos", price:49, category:"wraps", img:"the-crispy-tacos.webp", desc:"Crispy chicken tacos with sauce."},
-  {id:21, name:"The Meat Tacos", price:55, category:"wraps", img:"the-meat-tacos.webp", desc:"Meat tacos with cheese and sauce."},
-  {id:22, name:"The Mixt", price:65, category:"meals", img:"the-mixt.webp", desc:"Mixed chicken and meat special meal."},
-  {id:23, name:"The Special", price:69, category:"burgers", img:"the-special.webp", desc:"Special burger with premium sauce."},
-  {id:24, name:"The Spicy", price:59, category:"burgers", img:"the-spicy.webp", desc:"Spicy crispy chicken burger."},
-  {id:25, name:"Triple Smashed", price:89, category:"burgers", img:"triple-smashed.webp", desc:"Triple smashed burger for big hunger."},
-  {id:26, name:"Sauce Bomb", price:59, category:"burgers", img:"sauce-bomb.webp", desc:"Saucy chicken burger with bold flavor."},
-  {id:27, name:"French Fries", price:19, category:"sides", img:"extra-fries.webp", desc:"Crispy golden French fries."},
-  {id:28, name:"Extra Sauce", price:8, category:"sides", img:"extra-sauce.webp", desc:"Extra SFC special sauce."},
-  {id:29, name:"Drinks", price:10, category:"drinks", img:"extra-cola.webp", desc:"Coca-Cola, Fanta, Sprite or water."}
+const menu=[
+
+{
+name:"Cheese Bomb",
+price:59,
+img:"cheese-bomb.webp"
+},
+
+{
+name:"Classic Burger",
+price:55,
+img:"classic-burger.webp"
+},
+
+{
+name:"Crisp Duo",
+price:65,
+img:"crisp-duo.webp"
+},
+
+{
+name:"Crispy Loaded",
+price:60,
+img:"crispy-loaded.webp"
+},
+
+{
+name:"Crispy Wrap",
+price:50,
+img:"crispy-wrap.webp"
+},
+
+{
+name:"Double Smashed",
+price:75,
+img:"double-smashed.webp"
+},
+
+{
+name:"Happy Duo",
+price:89,
+img:"happy-duo.webp"
+},
+
+{
+name:"Italian Bowl",
+price:60,
+img:"italian-bowl.webp"
+},
+
+{
+name:"Italian Crispy",
+price:65,
+img:"italian-crispy.webp"
+},
+
+{
+name:"Mac Cheese Bowl",
+price:45,
+img:"mac-cheese-bowl.webp"
+},
+
+{
+name:"Mac Cheese Crispy",
+price:55,
+img:"mac-cheese-crispy.webp"
+},
+
+{
+name:"Meat Loaded",
+price:75,
+img:"meat-loaded.webp"
+},
+
+{
+name:"Sauce Bomb",
+price:55,
+img:"sauce-bomb.webp"
+},
+
+{
+name:"SFC Duo",
+price:95,
+img:"sfc-duo.webp"
+},
+
+{
+name:"Signature",
+price:65,
+img:"signature.webp"
+},
+
+{
+name:"Smashed Wrap",
+price:55,
+img:"smashed-wrap.webp"
+},
+
+{
+name:"The Classic",
+price:59,
+img:"the-classic.webp"
+},
+
+{
+name:"The Crispy Tacos",
+price:49,
+img:"the-crispy-tacos.webp"
+},
+
+{
+name:"The Meat Tacos",
+price:55,
+img:"the-meat-tacos.webp"
+},
+
+{
+name:"The Mixt",
+price:70,
+img:"the-mixt.webp"
+},
+
+{
+name:"The Special",
+price:75,
+img:"the-special.webp"
+},
+
+{
+name:"The Spicy",
+price:60,
+img:"the-spicy.webp"
+},
+
+{
+name:"Triple Smashed",
+price:95,
+img:"triple-smashed.webp"
+},
+
+{
+name:"Wrap Duo",
+price:80,
+img:"wrap-duo.webp"
+},
+
+{
+name:"Extra Fries",
+price:15,
+img:"extra-fries.webp"
+},
+
+{
+name:"Extra Cola",
+price:12,
+img:"extra-cola.webp"
+},
+
+{
+name:"Extra Sauce",
+price:8,
+img:"extra-sauce.webp"
+}
+
 ];
 
-let cart = [];
+let cart=[];
 
-const menuGrid = document.getElementById("menuGrid");
-const cartItems = document.getElementById("cartItems");
-const cartTotal = document.getElementById("cartTotal");
-const cartCount = document.getElementById("cartCount");
+const menuGrid=
+document.getElementById("menuGrid");
 
-function renderMenu(category = "all"){
-  const filtered = category === "all"
-    ? menuItems
-    : menuItems.filter(item => item.category === category);
+const basket=
+document.getElementById("basket");
 
-  menuGrid.innerHTML = filtered.map(item => `
-    <article class="card">
-      <div class="card-img">
-        <img src="${item.img}" alt="${item.name}">
-      </div>
-      <div class="card-body">
-        <h3>${item.name}</h3>
-        <p>${item.desc}</p>
-        <div class="card-bottom">
-          <span class="price">${item.price} DHS</span>
-          <button class="add-btn" onclick="addToCart(${item.id})">+ Add</button>
-        </div>
-      </div>
-    </article>
-  `).join("");
+const total=
+document.getElementById("total");
+
+const count=
+document.getElementById("cartCount");
+
+
+function loadMenu(){
+
+menuGrid.innerHTML=
+
+menu.map((item,index)=>`
+
+<div class="card">
+
+<img src="${item.img}">
+
+<h3>${item.name}</h3>
+
+<div class="price">
+
+${item.price} DHS
+
+</div>
+
+<br>
+
+<button class="whatsapp"
+
+onclick="addItem(${index})">
+
++
+
+Add
+
+</button>
+
+</div>
+
+`).join("");
+
 }
 
-function addToCart(id){
-  const item = menuItems.find(product => product.id === id);
-  const existing = cart.find(product => product.id === id);
+function addItem(index){
 
-  if(existing){
-    existing.qty += 1;
-  } else {
-    cart.push({...item, qty:1});
-  }
+const item=menu[index];
 
-  renderCart();
-}
+cart.push(item);
 
-function increaseQty(id){
-  const item = cart.find(product => product.id === id);
-  if(item){
-    item.qty += 1;
-    renderCart();
-  }
-}
+renderCart();
 
-function decreaseQty(id){
-  const item = cart.find(product => product.id === id);
-  if(!item) return;
-
-  item.qty -= 1;
-
-  if(item.qty <= 0){
-    cart = cart.filter(product => product.id !== id);
-  }
-
-  renderCart();
-}
-
-function removeItem(id){
-  cart = cart.filter(product => product.id !== id);
-  renderCart();
 }
 
 function renderCart(){
-  const totalQty = cart.reduce((sum, item) => sum + item.qty, 0);
-  const totalPrice = cart.reduce((sum, item) => sum + item.price * item.qty, 0);
 
-  cartCount.textContent = totalQty;
-  cartTotal.textContent = `${totalPrice} DHS`;
+count.innerHTML=
+cart.length;
 
-  if(cart.length === 0){
-    cartItems.innerHTML = `<p class="empty">No items selected</p>`;
-    return;
-  }
+if(cart.length===0){
 
-  cartItems.innerHTML = cart.map(item => `
-    <div class="cart-row">
-      <img src="${item.img}" alt="${item.name}">
-      <div>
-        <h4>${item.name}</h4>
-        <div class="qty">
-          <button onclick="decreaseQty(${item.id})">-</button>
-          <span>${item.qty}</span>
-          <button onclick="increaseQty(${item.id})">+</button>
-        </div>
-      </div>
-      <div>
-        <button class="remove" onclick="removeItem(${item.id})">×</button>
-        <strong>${item.price * item.qty} DHS</strong>
-      </div>
-    </div>
-  `).join("");
+basket.innerHTML=
+"No items selected";
+
+total.innerHTML=
+"0 DHS";
+
+return;
+
 }
 
-function clearCart(){
-  cart = [];
-  renderCart();
+basket.innerHTML=
+cart.map((item)=>`
+
+<div style="
+display:flex;
+justify-content:space-between;
+padding:8px 0;
+border-bottom:1px solid #ddd">
+
+<span>
+
+${item.name}
+
+</span>
+
+<b>
+
+${item.price}
+
+</b>
+
+</div>
+
+`).join("");
+
+const finalTotal=
+cart.reduce(
+
+(sum,item)=>
+
+sum+item.price,
+
+0
+
+);
+
+total.innerHTML=
+finalTotal+" DHS";
+
 }
 
 function checkoutWhatsApp(){
-  if(cart.length === 0){
-    alert("Please add items to your order first.");
-    return;
-  }
 
-  const totalPrice = cart.reduce((sum, item) => sum + item.price * item.qty, 0);
+if(cart.length===0){
 
-  let message = "Hello SFC Fried Chicken, I would like to order:%0A%0A";
+alert(
+"Please select items"
+);
 
-  cart.forEach(item => {
-    message += `• ${item.name} x${item.qty} = ${item.price * item.qty} DHS%0A`;
-  });
+return;
 
-  message += `%0ATotal: ${totalPrice} DHS%0A%0AName:%0AAddress:%0ANote:`;
-
-  window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
 }
 
-document.querySelectorAll(".tab").forEach(button => {
-  button.addEventListener("click", () => {
-    document.querySelectorAll(".tab").forEach(tab => tab.classList.remove("active"));
-    button.classList.add("active");
-    renderMenu(button.dataset.category);
-  });
+let msg=
+
+"Salam SFC,%0A%0A";
+
+msg+=
+
+"Talab dyali:%0A";
+
+cart.forEach(item=>{
+
+msg+=
+
+`• ${item.name}
+- ${item.price} DHS%0A`;
+
 });
 
-renderMenu();
-renderCart();
+msg+=
+
+`%0ATotal:
+${cart.reduce((s,x)=>s+x.price,0)}
+DHS`;
+
+window.open(
+
+`https://wa.me/${phoneNumber}?text=${msg}`
+
+);
+
+}
+
+loadMenu();
