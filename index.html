@@ -1,243 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-
-<title>SFC Fried Chicken</title>
-
-<link rel="stylesheet" href="style.css">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SFC Fried Chicken Menu</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 </head>
-
 <body>
 
-<header class="top-header">
+<header class="site-header">
+  <div class="socials">
+    <a href="https://www.instagram.com/sfc.ma" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://www.tiktok.com/@sfc.ma" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+    <a href="https://www.facebook.com/sfcTiznit" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+  </div>
 
-<div class="social-icons">
+  <img src="logo.png" class="logo" alt="SFC Fried Chicken" />
 
-<a href="https://www.instagram.com/sfc.ma" target="_blank">
-<i class="fa-brands fa-instagram"></i>
-</a>
-
-<a href="https://www.tiktok.com/@sfc.ma" target="_blank">
-<i class="fa-brands fa-tiktok"></i>
-</a>
-
-<a href="https://www.facebook.com/sfcTiznit" target="_blank">
-<i class="fa-brands fa-facebook"></i>
-</a>
-
-</div>
-
-<img src="logo.png" class="main-logo">
-
-<a href="tel:+212641928720" class="call-btn">
-
-<i class="fa-solid fa-phone"></i>
-
-+212 641 928 720
-
-</a>
-
+  <a class="call" href="tel:+212641928720"><i class="fa-solid fa-phone"></i> +212 641 928 720</a>
 </header>
 
-
-<section class="hero">
-
-<div class="hero-content">
-
-<div>
-
-<h1>SFC FRIED CHICKEN</h1>
-
-<p>
-
-Beniiiiiiiiiin.<br>
-
-Darori Tjerbouh.<br>
-
-Krispy men berra,<br>
-
-o Juicy men L'dakhel.
-
-</p>
-
-</div>
-
-<div>
-
-<img src="signature.webp" class="hero-image">
-
-</div>
-
-</div>
-
+<section class="intro">
+  <h1>Menu SFC Fried Chicken</h1>
+  <p>Tap any item to send your order directly on WhatsApp.</p>
 </section>
 
+<main class="menu-book">
 
+  <section class="menu-page cover">
+    <img src="assets/pages/page-01.jpg" alt="SFC Menu Cover" />
+  </section>
 
-<section class="menu-title">
+  <section class="menu-page">
+    <img src="assets/pages/page-02.jpg" alt="Chicken sandwiches menu" />
+    <button class="hotspot" style="left:0%;top:0%;width:50%;height:25%" data-name="The Classic" data-price="25"></button>
+    <button class="hotspot" style="left:0%;top:25%;width:50%;height:25%" data-name="Signature" data-price="33"></button>
+    <button class="hotspot" style="left:50%;top:25%;width:50%;height:25%" data-name="The Special" data-price="33"></button>
+    <button class="hotspot" style="left:0%;top:50%;width:100%;height:28%" data-name="The Spicy" data-price="26"></button>
+  </section>
 
-<h2>L'MENU DYALNA</h2>
+  <section class="menu-page">
+    <img src="assets/pages/page-03.jpg" alt="Signature SFC Crispy Sandwich" />
+    <button class="hotspot" style="left:0%;top:0%;width:100%;height:100%" data-name="Signature SFC Crispy Sandwich" data-price="35"></button>
+  </section>
 
-</section>
+  <section class="menu-page">
+    <img src="assets/pages/page-04.jpg" alt="Burger menu" />
+    <button class="hotspot" style="left:0%;top:0%;width:100%;height:28%" data-name="Classic Burger" data-price="25"></button>
+    <button class="hotspot" style="left:0%;top:28%;width:100%;height:28%" data-name="Double Smashed" data-price="30"></button>
+    <button class="hotspot" style="left:0%;top:56%;width:100%;height:32%" data-name="Triple Smashed" data-price="37"></button>
+  </section>
 
+  <section class="menu-page">
+    <img src="assets/pages/page-05.jpg" alt="Tacos menu" />
+    <button class="hotspot" style="left:0%;top:0%;width:100%;height:28%" data-name="The Meat" data-price="28"></button>
+    <button class="hotspot" style="left:0%;top:28%;width:100%;height:28%" data-name="The Crispy" data-price="29"></button>
+    <button class="hotspot" style="left:0%;top:56%;width:100%;height:32%" data-name="The Mixt" data-price="35"></button>
+  </section>
 
-<div class="main-layout">
+  <section class="menu-page">
+    <img src="assets/pages/page-06.jpg" alt="Wrap menu" />
+    <button class="hotspot" style="left:0%;top:0%;width:100%;height:48%" data-name="Crispy Wrap" data-price="22"></button>
+    <button class="hotspot" style="left:0%;top:48%;width:100%;height:48%" data-name="Smashed Wrap" data-price="25"></button>
+  </section>
 
-<div class="grid" id="menuGrid">
+  <section class="menu-page">
+    <img src="assets/pages/page-07.jpg" alt="Strips menu" />
+    <button class="hotspot" style="left:0%;top:0%;width:100%;height:31%" data-name="3 Strips" data-price="30"></button>
+    <button class="hotspot" style="left:0%;top:31%;width:100%;height:31%" data-name="6 Strips" data-price="49"></button>
+    <button class="hotspot" style="left:0%;top:62%;width:100%;height:34%" data-name="10 Strips" data-price="69"></button>
+  </section>
 
-</div>
+  <section class="menu-page">
+    <img src="assets/pages/page-08.jpg" alt="Loaded fries menu" />
+    <button class="hotspot" style="left:0%;top:0%;width:100%;height:24%" data-name="Meat Loaded" data-price="25"></button>
+    <button class="hotspot" style="left:0%;top:24%;width:100%;height:24%" data-name="Cheese Bomb" data-price="22"></button>
+    <button class="hotspot" style="left:0%;top:48%;width:100%;height:24%" data-name="Crispy Loaded" data-price="25"></button>
+    <button class="hotspot" style="left:0%;top:72%;width:100%;height:20%" data-name="Sauce Bomb" data-price="20"></button>
+  </section>
 
+  <section class="menu-page">
+    <img src="assets/pages/page-09.jpg" alt="Crispy bowls menu" />
+    <button class="hotspot" style="left:0%;top:0%;width:100%;height:50%" data-name="Mac & Cheese Crispy" data-price="35"></button>
+    <button class="hotspot" style="left:0%;top:50%;width:100%;height:50%" data-name="Italian Crispy Bowl" data-price="35"></button>
+  </section>
 
+  <section class="menu-page">
+    <img src="assets/pages/page-10.jpg" alt="Duo menu" />
+    <button class="hotspot" style="left:0%;top:0%;width:100%;height:25%" data-name="Crisp Duo" data-price="39"></button>
+    <button class="hotspot" style="left:0%;top:25%;width:100%;height:25%" data-name="Happy Duo" data-price="34"></button>
+    <button class="hotspot" style="left:0%;top:50%;width:100%;height:25%" data-name="SFC Duo" data-price="38"></button>
+    <button class="hotspot" style="left:0%;top:75%;width:100%;height:22%" data-name="Wrap Duo" data-price="30"></button>
+  </section>
 
-<div class="cart">
+  <section class="menu-page">
+    <img src="assets/pages/page-11.jpg" alt="Bowl menu" />
+    <button class="hotspot" style="left:0%;top:0%;width:100%;height:50%" data-name="Mac & Cheese Bowl" data-price="25"></button>
+    <button class="hotspot" style="left:0%;top:50%;width:100%;height:50%" data-name="Italian Bowl" data-price="25"></button>
+  </section>
 
-<h2>
+  <section class="menu-page">
+    <img src="assets/pages/page-12.jpg" alt="Extra Cola" />
+    <button class="hotspot" style="left:0%;top:0%;width:100%;height:100%" data-name="Extra Cola" data-price="5"></button>
+  </section>
 
-<i class="fa-solid fa-basket-shopping"></i>
+  <section class="menu-page">
+    <img src="assets/pages/page-13.jpg" alt="Extra Fries" />
+    <button class="hotspot" style="left:0%;top:0%;width:100%;height:100%" data-name="Extra Fries" data-price="5"></button>
+  </section>
 
-Talab dyalek
+  <section class="menu-page">
+    <img src="assets/pages/page-14.jpg" alt="Extra Sauce" />
+    <button class="hotspot" style="left:0%;top:0%;width:100%;height:100%" data-name="Extra Sauce" data-price="2"></button>
+  </section>
 
-<span id="cartCount">
-
-0
-
-</span>
-
-</h2>
-
-
-<div id="basket">
-
-No items selected
-
-</div>
-
-
-<div class="total">
-
-<span>TOTAL</span>
-
-<span id="total">
-
-0 DHS
-
-</span>
-
-</div>
-
-
-<button class="whatsapp"
-
-onclick="checkoutWhatsApp()">
-
-<i class="fa-brands fa-whatsapp"></i>
-
-Sifet lina message
-
-</button>
-
-
-
-<div class="features">
-
-<div>
-
-✓ 100% HALAL
-
-</div>
-
-<div>
-
-✓ Freshly made
-
-</div>
-
-<div>
-
-✓ Fast Delivery
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
+</main>
 
 <footer>
+  <div>
+    <img src="logo.png" class="footer-logo" alt="SFC Fried Chicken" />
+  </div>
 
-<div>
+  <div>
+    <h3>Follow us</h3>
+    <div class="footer-socials">
+      <a href="https://www.instagram.com/sfc.ma" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@sfc.ma" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="https://www.facebook.com/sfcTiznit" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+    </div>
+  </div>
 
-<img src="logo.png" class="footer-logo">
+  <div>
+    <h3>Contact</h3>
+    <p><a href="tel:+212641928720">+212 641 928 720</a></p>
+    <p><a href="https://wa.me/212641928720" target="_blank">WhatsApp</a></p>
+  </div>
 
-</div>
-
-<div>
-
-<h3>FOLLOW US</h3>
-
-<div class="footer-social">
-
-<a href="https://www.instagram.com/sfc.ma">
-
-<i class="fa-brands fa-instagram"></i>
-
-</a>
-
-<a href="https://www.tiktok.com/@sfc.ma">
-
-<i class="fa-brands fa-tiktok"></i>
-
-</a>
-
-<a href="https://www.facebook.com/sfcTiznit">
-
-<i class="fa-brands fa-facebook"></i>
-
-</a>
-
-</div>
-
-</div>
-
-<div>
-
-<h3>CONTACT</h3>
-
-<p>
-
-+212641928720
-
-</p>
-
-</div>
-
-<div>
-
-<h3>LOCATION</h3>
-
-<a target="_blank"
-
-href="https://maps.app.goo.gl/zPzpB3QQHrpQdzuC8">
-
-Open location
-
-</a>
-
-</div>
-
+  <div>
+    <h3>Location</h3>
+    <p><a href="https://maps.app.goo.gl/zPzpB3QQHrpQdzuC8" target="_blank">Open Google Maps</a></p>
+  </div>
 </footer>
 
-
 <script src="script.js"></script>
-
 </body>
 </html>
