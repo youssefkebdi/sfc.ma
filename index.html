@@ -1,111 +1,70 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SFC Fried Chicken</title>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-</head>
-<body>
-
+<!-- TOP CONTACT BAR -->
 <header class="top-contact">
-  <div class="social">
-    <a href="https://www.instagram.com/sfc.ma" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-    <a href="https://www.tiktok.com/@sfc.ma" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
-    <a href="https://www.facebook.com/sfcTiznit" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-  </div>
 
-  <div class="contact-actions">
-    <a href="https://maps.app.goo.gl/zPzpB3QQHrpQdzuC8" target="_blank"><i class="fa-solid fa-location-dot"></i> Location</a>
-    <a href="tel:+212641928720"><i class="fa-solid fa-phone"></i> +212 641 928 720</a>
-  </div>
+<div class="contact-actions">
+
+<a href="https://maps.app.goo.gl/zPzpB3QQHrpQdzuC8" target="_blank">
+<i class="fa-solid fa-location-dot"></i>
+Location
+</a>
+
+<a href="tel:+212641928720">
+<i class="fa-solid fa-phone"></i>
++212 641 928 720
+</a>
+
+</div>
+
 </header>
 
+
+
+<!-- LOGO SECTION -->
+
 <section class="logo-banner">
-  <img src="top-banner.png" alt="SFC Fried Chicken">
+
+<img src="Grey Simple Business Corporate LinkedIn Banner.png" alt="SFC">
+
+<div class="social-under-logo">
+
+<a href="https://www.instagram.com/sfc.ma" target="_blank">
+<i class="fa-brands fa-instagram"></i>
+</a>
+
+<a href="https://www.tiktok.com/@sfc.ma" target="_blank">
+<i class="fa-brands fa-tiktok"></i>
+</a>
+
+<a href="https://www.facebook.com/sfcTiznit" target="_blank">
+<i class="fa-brands fa-facebook-f"></i>
+</a>
+
+</div>
+
 </section>
+
+
+
+<!-- HERO IMAGE -->
 
 <section class="hero">
-  <div class="hero-left">
-    <p class="tag">SFC Fried Chicken</p>
-    <h1>Beniiiiiiiiiin.<br>Darori Tjerbouh.</h1>
-    <p class="subtitle">Krispy men berra, o Juicy men L'dakhel.</p>
-    <div class="hero-buttons">
-      <a href="#menu" class="hero-btn">Explore Menu</a>
-      <a href="#menu" class="whatsapp-hero">Start Order</a>
-    </div>
-  </div>
-  <div class="hero-right">
-    <img src="burger-hero.png" alt="SFC Burger">
-  </div>
+
+<div class="hero-full-image">
+
+<img src="hero-banner.png" alt="Hero">
+
+</div>
+
+<div class="hero-buttons">
+
+<a href="#menu" class="hero-btn">
+Explore Menu
+</a>
+
+<a href="#menu" class="whatsapp-hero">
+Start Order
+</a>
+
+</div>
+
 </section>
-
-<section class="order-types">
-  <h2>How would you like to order?</h2>
-  <div class="type-grid">
-    <button type="button" onclick="setOrderType('Delivery')"><i class="fa-solid fa-motorcycle"></i>Delivery</button>
-    <button type="button" onclick="setOrderType('Pick Up')"><i class="fa-solid fa-bag-shopping"></i>Pick Up</button>
-    <a href="https://maps.app.goo.gl/zPzpB3QQHrpQdzuC8" target="_blank"><i class="fa-solid fa-store"></i>Dine In</a>
-  </div>
-</section>
-
-<section class="menu-section" id="menu">
-  <div class="section-title">
-    <p>Fresh. Crispy. Hot.</p>
-    <h2>Explore Menu</h2>
-  </div>
-
-  <div class="main-layout">
-    <div class="menu-grid" id="menuGrid"></div>
-
-    <aside class="cart">
-      <h2><span><i class="fa-solid fa-basket-shopping"></i> Talab dyalek</span><span id="cartCount">0</span></h2>
-      <div id="cartItems"><p class="empty">No items selected</p></div>
-      <div class="total"><span>Total</span><strong id="cartTotal">0 DH</strong></div>
-
-      <div class="customer-form">
-        <label for="customerName">Your name</label>
-        <input id="customerName" type="text" placeholder="Enter your name" autocomplete="name">
-
-        <label for="customerAddress">Address / location</label>
-        <textarea id="customerAddress" rows="3" placeholder="Enter delivery address or location"></textarea>
-
-        <label for="customerNote">Note (optional)</label>
-        <textarea id="customerNote" rows="2" placeholder="Any extra note?"></textarea>
-      </div>
-
-      <button class="checkout" onclick="checkoutWhatsApp()"><i class="fa-brands fa-whatsapp"></i> Sifet lina message</button>
-      <button class="clear" onclick="clearCart()">Clear basket</button>
-      <p class="note">Your name, address and order will be sent as a WhatsApp message.</p>
-    </aside>
-  </div>
-</section>
-
-<footer>
-  <div>
-    <img src="top-banner.jpg" alt="SFC Logo">
-    <p>Beniiiiiiiiiin. Darori Tjerbouh.</p>
-  </div>
-  <div>
-    <h3>Follow Us</h3>
-    <div class="footer-social">
-      <a href="https://www.instagram.com/sfc.ma" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-      <a href="https://www.tiktok.com/@sfc.ma" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
-      <a href="https://www.facebook.com/sfcTiznit" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-    </div>
-  </div>
-  <div>
-    <h3>Contact</h3>
-    <a href="tel:+212641928720"><i class="fa-solid fa-phone"></i> +212 641 928 720</a>
-    <a href="https://wa.me/212641928720" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
-  </div>
-  <div>
-    <h3>Location</h3>
-    <a href="https://maps.app.goo.gl/zPzpB3QQHrpQdzuC8" target="_blank"><i class="fa-solid fa-location-dot"></i> Open in Google Maps</a>
-  </div>
-</footer>
-
-<script src="script.js"></script>
-</body>
-</html>
