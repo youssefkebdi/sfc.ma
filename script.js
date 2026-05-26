@@ -1,194 +1,200 @@
 const phoneNumber="212641928720";
 const menuItems=[
   {
-    "name": "The Classic",
+    "name": "THE CLASSIC",
     "price": 25,
-    "img": "images/the-classic.webp",
+    "img": "assets/the-classic.webp",
     "desc": "Crispy chicken sandwich with fresh toppings."
   },
   {
-    "name": "Signature",
+    "name": "SIGNATURE",
     "price": 33,
-    "img": "images/signature.webp",
+    "img": "assets/signature.webp",
     "desc": "Signature SFC crispy chicken burger."
   },
   {
-    "name": "The Special",
+    "name": "THE SPECIAL",
     "price": 33,
-    "img": "images/the-special.webp",
+    "img": "assets/the-special.webp",
     "desc": "Special crispy chicken burger with sauce."
   },
   {
-    "name": "The Spicy",
+    "name": "THE SPICY",
     "price": 26,
-    "img": "images/the-spicy.webp",
+    "img": "assets/the-spicy.webp",
     "desc": "Spicy crispy chicken sandwich."
   },
   {
-    "name": "Signature SFC Crispy Sandwich",
+    "name": "SIGNATURE CRISPY SANDWICH",
     "price": 35,
-    "img": "images/signature-sfc-crispy-sandwich.webp",
+    "img": "assets/signature-crispy-sandwich.webp",
     "desc": "Long crispy sandwich with signature sauce."
   },
   {
-    "name": "Classic Burger",
+    "name": "CLASSIC BURGER",
     "price": 25,
-    "img": "images/classic-burger.webp",
-    "desc": "Classic beef burger with cheese and pickles."
+    "img": "assets/classic-burger.webp",
+    "desc": "Classic burger with cheese and pickles."
   },
   {
-    "name": "Double Smashed",
+    "name": "DOUBLE SMASHED",
     "price": 30,
-    "img": "images/double-smashed.webp",
+    "img": "assets/double-smashed.webp",
     "desc": "Double smashed beef burger with cheese."
   },
   {
-    "name": "Triple Smashed",
+    "name": "TRIPLE SMASHED",
     "price": 37,
-    "img": "images/triple-smashed.webp",
+    "img": "assets/triple-smashed.webp",
     "desc": "Triple smashed beef burger."
   },
   {
-    "name": "The Meat French Tacos",
+    "name": "THE MEAT TACOS",
     "price": 28,
-    "img": "images/the-meat-french-tacos.webp",
+    "img": "assets/the-meat-tacos.webp",
     "desc": "French tacos with meat, fries and sauce."
   },
   {
-    "name": "The Crispy French Tacos",
+    "name": "THE CRISPY TACOS",
     "price": 29,
-    "img": "images/the-crispy-french-tacos.webp",
+    "img": "assets/the-crispy-tacos.webp",
     "desc": "French tacos with crispy chicken and fries."
   },
   {
-    "name": "The Mixt French Tacos",
+    "name": "THE MIXT TACOS",
     "price": 35,
-    "img": "images/the-mixt-french-tacos.webp",
+    "img": "assets/the-mixt-tacos.webp",
     "desc": "French tacos with mixed filling and sauce."
   },
   {
-    "name": "Crispy Wrap",
+    "name": "CRISPY WRAP",
     "price": 22,
-    "img": "images/crispy-wrap.webp",
+    "img": "assets/crispy-wrap.webp",
     "desc": "Crispy chicken wrap with fresh filling."
   },
   {
-    "name": "Smashed Wrap",
+    "name": "SMASHED WRAP",
     "price": 25,
-    "img": "images/smashed-wrap.webp",
+    "img": "assets/smashed-wrap.webp",
     "desc": "Smashed meat wrap with cheese sauce."
   },
   {
-    "name": "3 Strips",
+    "name": "3 STRIPS MEAL",
     "price": 30,
-    "img": "images/3-strips.webp",
-    "desc": "3 crispy chicken strips with sauce."
+    "img": "assets/3-strips-meal.webp",
+    "desc": "3 crispy chicken strips meal."
   },
   {
-    "name": "6 Strips",
+    "name": "6 STRIPS MEAL",
     "price": 49,
-    "img": "images/6-strips.webp",
-    "desc": "6 crispy chicken strips with sauce."
+    "img": "assets/6-strips-meal.webp",
+    "desc": "6 crispy chicken strips meal."
   },
   {
-    "name": "10 Strips",
+    "name": "10 STRIPS MEAL",
     "price": 69,
-    "img": "images/10-strips.webp",
-    "desc": "10 crispy chicken strips with sauce."
+    "img": "assets/10-strips-meal.webp",
+    "desc": "10 crispy chicken strips meal."
   },
   {
-    "name": "Meat Loaded",
+    "name": "MEAT LOADED FRIES",
     "price": 25,
-    "img": "images/meat-loaded.webp",
+    "img": "assets/meat-loaded-fries.webp",
     "desc": "Loaded fries with meat and sauce."
   },
   {
-    "name": "Cheese Bomb",
+    "name": "CHEESE BOMB FRIES",
     "price": 22,
-    "img": "images/cheese-bomb.webp",
+    "img": "assets/cheese-bomb-fries.webp",
     "desc": "Loaded fries with cheese sauce."
   },
   {
-    "name": "Crispy Loaded",
+    "name": "CRISPY LOADED FRIES",
     "price": 25,
-    "img": "images/crispy-loaded.webp",
+    "img": "assets/crispy-loaded-fries.webp",
     "desc": "Loaded fries with crispy chicken."
   },
   {
-    "name": "Sauce Bomb",
+    "name": "SAUCE BOMB FRIES",
     "price": 20,
-    "img": "images/sauce-bomb.webp",
+    "img": "assets/sauce-bomb-fries.webp",
     "desc": "Loaded fries with special sauce."
   },
   {
-    "name": "Mac & Cheese Crispy",
+    "name": "MAC AND CHEESE CRISPY MEAL",
     "price": 35,
-    "img": "images/mac-cheese-crispy.webp",
+    "img": "assets/mac-and-cheese-crispy-meal.webp",
     "desc": "Mac and cheese with crispy chicken."
   },
   {
-    "name": "Italian Crispy Bowl",
+    "name": "ITALIAN CRISPY MEAL",
     "price": 35,
-    "img": "images/italian-crispy-bowl.webp",
-    "desc": "Italian style crispy bowl."
+    "img": "assets/italian-crispy-meal.webp",
+    "desc": "Italian crispy meal."
   },
   {
-    "name": "Crisp Duo",
+    "name": "CRISPY DUO COMBO",
     "price": 39,
-    "img": "images/crisp-duo.webp",
-    "desc": "Burger and wrap duo."
+    "img": "assets/crispy-duo-combo.webp",
+    "desc": "Crispy duo combo."
   },
   {
-    "name": "Happy Duo",
+    "name": "HAPPY DUO COMBO",
     "price": 34,
-    "img": "images/happy-duo.webp",
-    "desc": "Happy duo meal."
+    "img": "assets/happy-duo-combo.webp",
+    "desc": "Happy duo combo."
   },
   {
-    "name": "SFC Duo",
+    "name": "SFC DUO COMBO",
     "price": 38,
-    "img": "images/sfc-duo.webp",
-    "desc": "SFC burger, wrap, fries and drink."
+    "img": "assets/sfc-duo-combo.webp",
+    "desc": "SFC duo combo."
   },
   {
-    "name": "Wrap Duo",
+    "name": "WRAP DUO COMBO",
     "price": 30,
-    "img": "images/wrap-duo.webp",
-    "desc": "Two wraps with fries."
+    "img": "assets/wrap-duo-combo.webp",
+    "desc": "Wrap duo combo."
   },
   {
-    "name": "Mac & Cheese Bowl",
+    "name": "MAC AND CHEESE BOWL",
     "price": 25,
-    "img": "images/mac-cheese-bowl.webp",
+    "img": "assets/mac-and-cheese-bowl.webp",
     "desc": "Creamy mac and cheese bowl."
   },
   {
-    "name": "Italian Bowl",
+    "name": "ITALIAN BOWL",
     "price": 25,
-    "img": "images/italian-bowl.webp",
-    "desc": "Italian style bowl."
+    "img": "assets/italian-bowl.webp",
+    "desc": "Italian bowl."
   },
   {
-    "name": "Extra Cola",
+    "name": "DRINK",
     "price": 5,
-    "img": "images/extra-cola.webp",
-    "desc": "Extra cola drink."
+    "img": "assets/drink.webp",
+    "desc": "Soft drink."
   },
   {
-    "name": "Extra Fries",
+    "name": "FRIES",
     "price": 5,
-    "img": "images/extra-fries.webp",
-    "desc": "Extra fries."
+    "img": "assets/fries.webp",
+    "desc": "Fresh fries."
   },
   {
-    "name": "Extra Sauce",
+    "name": "SAUCE",
     "price": 2,
-    "img": "images/extra-sauce.webp",
+    "img": "assets/sauce.webp",
     "desc": "Extra sauce."
   }
 ];
 
 let cart=[];
+let orderType="Delivery";
+
+function setOrderType(type){
+  orderType=type;
+  alert("Order type selected: " + type);
+}
 
 function renderMenu(){
   document.getElementById("menuGrid").innerHTML=menuItems.map((item,index)=>`
@@ -248,10 +254,39 @@ function renderCart(){
 
 function checkoutWhatsApp(){
   if(cart.length===0){alert("Please add items first");return;}
+  const name=document.getElementById("customerName").value.trim();
+  const address=document.getElementById("customerAddress").value.trim();
+  const note=document.getElementById("customerNote").value.trim();
+
+  if(!name){
+    alert("Please enter your name before checkout.");
+    document.getElementById("customerName").focus();
+    return;
+  }
+
+  if(!address){
+    alert("Please enter your address/location before checkout.");
+    document.getElementById("customerAddress").focus();
+    return;
+  }
+
   let total=cart.reduce((s,x)=>s+(x.price*x.qty),0);
-  let msg="Salam SFC,%0A%0ABghit n-order:%0A";
-  cart.forEach(item=>{msg+=`• ${item.name} x${item.qty} = ${item.price*item.qty} DH%0A`;});
-  msg+=`%0ATotal: ${total} DH%0A%0AName:%0AAddress:%0ANote:`;
+  let msg="Salam SFC,%0A%0A";
+  msg+="Customer name: "+encodeURIComponent(name)+"%0A";
+  msg+="Address/location: "+encodeURIComponent(address)+"%0A";
+  msg+="Order type: "+encodeURIComponent(orderType)+"%0A%0A";
+  msg+="Order:%0A";
+
+  cart.forEach(item=>{
+    msg+=`• ${encodeURIComponent(item.name)} x${item.qty} = ${item.price*item.qty} DH%0A`;
+  });
+
+  msg+=`%0ATotal: ${total} DH`;
+
+  if(note){
+    msg+="%0ANote: "+encodeURIComponent(note);
+  }
+
   window.open(`https://wa.me/${phoneNumber}?text=${msg}`,"_blank");
 }
 
