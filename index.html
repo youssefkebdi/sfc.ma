@@ -33,7 +33,7 @@
     <p class="subtitle">Krispy men berra, o Juicy men L'dakhel.</p>
     <div class="hero-buttons">
       <a href="#menu" class="hero-btn">Explore Menu</a>
-      <a href="https://wa.me/212641928720?text=Salam%20SFC%2C%20bghit%20n-order" target="_blank" class="whatsapp-hero">Sifet lina message</a>
+      <a href="#menu" class="whatsapp-hero">Start Order</a>
     </div>
   </div>
   <div class="hero-right">
@@ -44,8 +44,8 @@
 <section class="order-types">
   <h2>How would you like to order?</h2>
   <div class="type-grid">
-    <a href="https://wa.me/212641928720?text=Salam%20SFC%2C%20bghit%20delivery%20order" target="_blank"><i class="fa-solid fa-motorcycle"></i>Delivery</a>
-    <a href="https://wa.me/212641928720?text=Salam%20SFC%2C%20bghit%20pickup%20order" target="_blank"><i class="fa-solid fa-bag-shopping"></i>Pick Up</a>
+    <button type="button" onclick="setOrderType('Delivery')"><i class="fa-solid fa-motorcycle"></i>Delivery</button>
+    <button type="button" onclick="setOrderType('Pick Up')"><i class="fa-solid fa-bag-shopping"></i>Pick Up</button>
     <a href="https://maps.app.goo.gl/zPzpB3QQHrpQdzuC8" target="_blank"><i class="fa-solid fa-store"></i>Dine In</a>
   </div>
 </section>
@@ -63,9 +63,21 @@
       <h2><span><i class="fa-solid fa-basket-shopping"></i> Talab dyalek</span><span id="cartCount">0</span></h2>
       <div id="cartItems"><p class="empty">No items selected</p></div>
       <div class="total"><span>Total</span><strong id="cartTotal">0 DH</strong></div>
+
+      <div class="customer-form">
+        <label for="customerName">Your name</label>
+        <input id="customerName" type="text" placeholder="Enter your name" autocomplete="name">
+
+        <label for="customerAddress">Address / location</label>
+        <textarea id="customerAddress" rows="3" placeholder="Enter delivery address or location"></textarea>
+
+        <label for="customerNote">Note (optional)</label>
+        <textarea id="customerNote" rows="2" placeholder="Any extra note?"></textarea>
+      </div>
+
       <button class="checkout" onclick="checkoutWhatsApp()"><i class="fa-brands fa-whatsapp"></i> Sifet lina message</button>
       <button class="clear" onclick="clearCart()">Clear basket</button>
-      <p class="note">Your order will be sent as a WhatsApp message.</p>
+      <p class="note">Your name, address and order will be sent as a WhatsApp message.</p>
     </aside>
   </div>
 </section>
